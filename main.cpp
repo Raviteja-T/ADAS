@@ -35,9 +35,9 @@ public:
 };
 
 int main() {
-    Vehicle my_vehicle(1, 0, 60);
-    std::vector<Vehicle> vehicles_ahead = { Vehicle(2, 100, 50), Vehicle(3, 200, 70) };
-    double safe_distance = 20;
+    Vehicle my_vehicle(1, 0, 100);
+    std::vector<Vehicle> vehicles_ahead = { Vehicle(2, 100, 50), Vehicle(3, 200, 70), Vehicle(4, 400, 50), Vehicle(5, 100, 20) };
+    double safe_distance = 100;
 
     AdaptiveCruiseControl acc;
     acc.updateSpeed(my_vehicle, vehicles_ahead, safe_distance);
