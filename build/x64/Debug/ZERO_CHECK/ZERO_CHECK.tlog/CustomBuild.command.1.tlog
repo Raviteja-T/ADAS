@@ -1,0 +1,10 @@
+^C:\USERS\RAVITEJA\DESKTOP\ADAS\BUILD\CMAKEFILES\996F5F1272A9CEAC3F425CB14C380C7A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Raviteja/Desktop/ADAS -BC:/Users/Raviteja/Desktop/ADAS/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Raviteja/Desktop/ADAS/build/ADAS.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
